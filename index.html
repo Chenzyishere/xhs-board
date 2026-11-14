@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作战看板 · 人格测试大全</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <p class="kicker" id="kicker"></p>
+      <h1>作战看板</h1>
+      <p class="lede" id="lede"></p>
+      <p class="meta" id="meta"></p>
+    </header>
+
+    <section>
+      <h2>正在进行</h2>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <section class="split">
+      <article class="lane you">
+        <h2>你要干 <span>智彦 · 账号与发布</span></h2>
+        <p class="lane-hint">只有你能在小红书 App 里完成的事。</p>
+        <ol id="you-list"></ol>
+      </article>
+      <article class="lane me">
+        <h2>我要干 <span>Cursor · 写稿与改代码</span></h2>
+        <p class="lane-hint">对话里直接说「写下一条」或「改看板」。</p>
+        <ol id="me-list"></ol>
+      </article>
+    </section>
+
+    <section>
+      <h2>先别做</h2>
+      <ul class="later" id="later"></ul>
+    </section>
+
+    <section>
+      <h2>怎么配合</h2>
+      <div class="rules" id="rules"></div>
+    </section>
+  </div>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
