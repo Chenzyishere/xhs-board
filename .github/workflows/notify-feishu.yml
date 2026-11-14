@@ -1,0 +1,24 @@
+name: Send today's copy to Feishu
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - today.json
+      - tools/send-feishu.js
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Post to Feishu
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+        run: |
+          if [ -z "$FEISHU_WEBHOOK" ]; then
+            echo "Skip: GitHub Secret FEISHU_WEBHOOK 还没填"
+            exit 0
+          fi
+          node tools/send-feishu.js
