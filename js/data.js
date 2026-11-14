@@ -1,4 +1,4 @@
-const BOARD = {
+window.BOARD = {
   updated: "2026-11-14",
   account: "虾说说",
   fans: 7,
