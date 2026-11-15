@@ -1,8 +1,8 @@
 # 作战看板
 
-人格测试大全（账号「虾说说」）的进度页：正在做什么、Mark 做什么、Cursor 做什么。
+看板已经并进软文素材台：https://chenzyishere.github.io/xhs-copy/
 
-纯静态，无构建。改 [js/data.js](js/data.js) 就是更新看板。
+进度改那边的 `js/board-data.js`。这个仓库只留飞书推送（`today.json` + Actions）。
 
 ## 本地
 
